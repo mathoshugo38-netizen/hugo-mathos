@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hugo Mathos · Mathos Contabilidade</title>
+<meta name="description" content="Hugo Mathos, contador. Mathos Contabilidade: contabilidade que ajuda sua empresa a crescer. Fale pelo WhatsApp (62) 9 8154-9797.">
+<meta name="theme-color" content="#1B2D49">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/og.jpg">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Hugo Mathos · Mathos Contabilidade">
+<meta property="og:description" content="Contabilidade que ajuda sua empresa a crescer. Fiscal, pessoal, contábil e planejamento tributário.">
+<meta property="og:url" content="https://hugo-mathos.vercel.app/">
+<meta property="og:image" content="https://hugo-mathos.vercel.app/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>html,body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>:root{--bg:#E8ECF1;--panel:#F8FAFC;--ink:#13213A;--muted:#5A687D;--line:#CDD5E0;--guide:#93A8C4;--steel:#375679;--logo-a:#1B2D49;--logo-b:#375679;--btn-bg:#1B2D49;--btn-fg:#F3F6FA;--btn-hover:#24395B;--chip:#EDF1F6;--shadow:rgba(19,33,58,.16);--dot:rgba(55,86,121,.18);--ok:#1F8A5B;--hero-0:#0D1729;--hero-1:#1B2D49;--hero-glow:#4A6E9B;--hero-ink:#F2F5FA;--hero-soft:#A9C1E0;--hero-line:rgba(169,193,224,.22);--f-display:"Montserrat",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;--f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--cut:22px;}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1220;--panel:#101B2E;--ink:#E8EEF6;--muted:#8C9AB0;--line:#22324C;--guide:#36557F;--steel:#86A6CE;--logo-a:#E6ECF4;--logo-b:#6F95C2;--btn-bg:#E3EAF3;--btn-fg:#0E1A2C;--btn-hover:#FFFFFF;--chip:#16233A;--shadow:rgba(0,0,0,.45);--dot:rgba(134,166,206,.12);--ok:#4CC38A;color-scheme:dark}}:root[data-theme="dark"]{--bg:#0A1220;--panel:#101B2E;--ink:#E8EEF6;--muted:#8C9AB0;--line:#22324C;--guide:#36557F;--steel:#86A6CE;--logo-a:#E6ECF4;--logo-b:#6F95C2;--btn-bg:#E3EAF3;--btn-fg:#0E1A2C;--btn-hover:#FFFFFF;--chip:#16233A;--shadow:rgba(0,0,0,.45);--dot:rgba(134,166,206,.12);--ok:#4CC38A;color-scheme:dark}*{box-sizing:border-box}[hidden]{display:none!important}html{-webkit-text-size-adjust:100%}body{background:var(--bg);color:var(--ink);font-family:var(--f-display);font-size:15px;line-height:1.5;min-height:100vh;overflow-x:hidden;background-image:radial-gradient(var(--dot) 1px,transparent 1.2px);background-size:22px 22px;}body.locked{overflow:hidden}a{color:inherit}button{font:inherit;color:inherit}:focus-visible{outline:2px solid var(--steel);outline-offset:3px}#intro{position:fixed;inset:0;z-index:50;background:var(--bg);display:grid;place-items:center;overflow:hidden;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));}#intro::before{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--dot) 1px,transparent 1.2px);background-size:22px 22px}#intro[hidden]{display:none!important}.stage{position:relative;display:flex;flex-direction:column;align-items:center;gap:18px}#logoAnim{width:min(52vw,250px);height:auto;overflow:visible;display:block}#logoAnim .pc{stroke-width:.9;stroke-linejoin:miter}#logoAnim .a{fill:var(--logo-a);stroke:var(--logo-a)}#logoAnim .b{fill:var(--logo-b);stroke:var(--logo-b)}#guides line{stroke:var(--guide);stroke-width:1;vector-effect:non-scaling-stroke;fill:none}#serpents polyline{fill:none;stroke:var(--logo-b);stroke-width:13;stroke-linejoin:miter;stroke-linecap:butt}#serpents rect{fill:var(--logo-b)}#cuts line{stroke:var(--steel);stroke-width:2;vector-effect:non-scaling-stroke}.wm{text-align:center;line-height:1}.wm-top{display:flex;justify-content:center;font-weight:800;font-size:clamp(34px,9vw,52px);letter-spacing:.04em;color:var(--logo-a)}.wm-top .m{display:inline-block;overflow:hidden;padding-bottom:.06em}.wm-top .m span{display:inline-block}.wm-sub{margin-top:10px;font-weight:400;font-size:clamp(11px,2.9vw,15px);letter-spacing:.42em;padding-left:.42em;color:var(--logo-b)}.wm-sub span{display:inline-block}.wm-rule{height:1px;width:clamp(120px,40vw,220px);background:var(--guide);margin:14px auto 0;transform-origin:center}.intro-cap{position:absolute;left:max(20px,env(safe-area-inset-left,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;align-items:center;}.intro-cap b{color:var(--steel);font-weight:500}.intro-bar{width:64px;height:1px;background:var(--line);position:relative;overflow:hidden}.intro-bar i{position:absolute;inset:0;background:var(--steel);transform-origin:left;transform:scaleX(0)}#skip{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));background:none;border:1px solid var(--line);padding:8px 14px;cursor:pointer;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}#skip:hover{color:var(--ink);border-color:var(--guide)}.wrap{position:relative;min-height:100vh;display:flex;justify-content:center;align-items:flex-start;padding-block:clamp(16px,5vh,56px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));}.watermark{position:fixed;width:min(120vw,900px);right:-22vw;top:8vh;opacity:.05;pointer-events:none;z-index:0}.watermark svg{width:100%;height:auto;display:block}.card-shadow{filter:drop-shadow(0 18px 40px var(--shadow));position:relative;z-index:1;width:100%;max-width:440px}.card{position:relative;width:100%;background:var(--panel);clip-path:polygon(var(--cut) 0,100% 0,100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,0 100%,0 var(--cut));display:flex;flex-direction:column;}.body{padding:22px 22px 18px;display:flex;flex-direction:column;gap:22px}.hero{position:relative;aspect-ratio:4/5.6;max-width:100%;overflow:hidden;color:var(--hero-ink);background:radial-gradient(60% 45% at 50% 36%,var(--hero-glow) 0%,transparent 70%),linear-gradient(180deg,var(--hero-1) 0%,var(--hero-0) 100%);isolation:isolate;}.hero-top{position:absolute;inset:0 0 auto;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 20px 0 30px}.brand{display:flex;align-items:center;gap:10px;min-width:0}.brand svg{width:24px;height:auto;flex:none}.brand span{font-size:11px;font-weight:800;letter-spacing:.08em;white-space:nowrap}.brand span em{font-style:normal;font-weight:400;letter-spacing:.24em;color:var(--hero-soft);margin-left:4px}.icon-btn{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--hero-line);background:rgba(255,255,255,.04);cursor:pointer;flex:none;color:var(--hero-ink)}.icon-btn:hover{background:rgba(255,255,255,.12)}.icon-btn svg{width:16px;height:16px}.hero-art{position:absolute;inset:0;z-index:1;pointer-events:none}.hero-art svg{position:absolute;left:50%;top:44%;width:118%;height:auto;transform:translate(-50%,-50%);overflow:visible}.hero-art .ln{fill:none;stroke:var(--hero-line);stroke-width:1;vector-effect:non-scaling-stroke}.hero-art .mk polygon{fill:none;stroke:var(--hero-soft);stroke-opacity:.35;stroke-width:1.2;vector-effect:non-scaling-stroke}.hero-art .crown-fill{fill:var(--hero-soft);opacity:.12}.cut{position:absolute;z-index:2;left:50%;bottom:0;width:90%;max-width:none;height:auto;transform:translateX(-50%);-webkit-mask-image:linear-gradient(180deg,#000 60%,transparent 97%);mask-image:linear-gradient(180deg,#000 60%,transparent 97%);filter:drop-shadow(0 20px 30px rgba(0,0,0,.35));}.hero::before{content:"";position:absolute;inset:0 0 auto;height:22%;z-index:3;pointer-events:none;background:linear-gradient(180deg,rgba(13,23,41,.55),transparent)}.hero::after{content:"";position:absolute;inset:auto 0 0;height:46%;z-index:3;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(13,23,41,.78) 55%,var(--hero-0))}.hero-name{position:absolute;z-index:4;left:22px;right:22px;bottom:20px;display:flex;flex-direction:column;gap:6px}.eyebrow{margin:0;font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--hero-soft);display:flex;align-items:center;gap:10px}.eyebrow::before{content:"";width:22px;height:1px;background:var(--hero-soft)}h1{margin:0;font-weight:800;font-size:clamp(40px,12.6vw,58px);line-height:.92;letter-spacing:-.02em;color:var(--hero-ink);text-wrap:balance}h1 span{display:block}h1 span:last-child{color:var(--hero-soft)}.tagline{margin:0;font-size:14px;color:var(--muted);line-height:1.55;max-width:36ch}.cta{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--btn-bg);color:var(--btn-fg);text-decoration:none;padding:17px 20px;font-weight:700;font-size:15px;letter-spacing:.01em;overflow:hidden;clip-path:polygon(14px 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%,0 14px);transition:background .25s;}.cta:hover{background:var(--btn-hover)}.cta .l{display:flex;align-items:center;gap:12px}.cta svg{width:22px;height:22px;flex:none}.cta .arr{transition:transform .3s}.cta:hover .arr{transform:translateX(4px)}.cta::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.25),transparent);transform:skewX(-31.6deg);animation:sweep 4.5s 1s infinite}@keyframes sweep{0%,70%{left:-60%}100%{left:130%}}.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.q{display:flex;flex-direction:column;align-items:center;gap:7px;padding:14px 4px 11px;text-decoration:none;background:var(--chip);font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--ink);clip-path:polygon(50% 0,100% 12%,100% 100%,0 100%,0 12%);transition:transform .25s,background .25s;}.q svg{width:20px;height:20px;color:var(--steel)}.q:hover{transform:translateY(-3px);background:var(--line)}.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 6px}.sec-h h2{margin:0;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}.sec-h small{font-family:var(--f-mono);font-size:10.5px;color:var(--guide);letter-spacing:.06em}.ledger{margin:0;padding:0;list-style:none;border-top:1px solid var(--ink)}.row{position:relative;display:grid;grid-template-columns:78px 1fr auto;align-items:center;gap:10px;padding:11px 2px;border-bottom:1px solid var(--line);isolation:isolate;}.row::before{content:"";position:absolute;inset:0 -12px;z-index:-1;background:var(--chip);clip-path:polygon(0 0,0 0,-20px 100%,-20px 100%);transition:clip-path .45s cubic-bezier(.2,.7,.2,1)}.row:hover::before{clip-path:polygon(0 0,calc(100% + 40px) 0,100% 100%,-20px 100%)}.row .k{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.row .v{min-width:0;font-family:var(--f-mono);font-size:13px;font-variant-numeric:tabular-nums;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}.row a.v:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--guide)}.status{font-family:var(--f-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:6px;padding-right:6px}.status::before{content:"";width:7px;height:7px;background:var(--muted);transform:rotate(45deg)}.status.on{color:var(--ok)}.status.on::before{background:var(--ok)}.copy{background:none;border:0;padding:6px;cursor:pointer;color:var(--muted);display:grid;place-items:center}.copy:hover{color:var(--steel)}.copy svg{width:15px;height:15px}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}.chips li{font-size:12px;font-weight:500;padding:7px 11px;border:1px solid var(--line);color:var(--ink)}.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ghost{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 10px;cursor:pointer;background:none;border:1px solid var(--ink);font-weight:700;font-size:13px;color:var(--ink);text-decoration:none;transition:background .2s,color .2s;}.ghost:hover{background:var(--ink);color:var(--panel)}.ghost svg{width:16px;height:16px}.foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em;color:var(--muted)}.foot button{background:none;border:0;cursor:pointer;color:var(--steel);font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em;display:flex;gap:6px;align-items:center;padding:4px 0}.foot button:hover{color:var(--ink)}.foot svg{width:13px;height:13px}.toast{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);opacity:0;background:var(--btn-bg);color:var(--btn-fg);font-size:13px;font-weight:600;padding:10px 16px;pointer-events:none;z-index:60;transition:opacity .25s,transform .25s}.toast.on{opacity:1;transform:translate(-50%,0)}.lead{display:flex;flex-direction:column;gap:10px}.open{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:12.5px;color:var(--muted)}.open b{font-weight:700;color:var(--ok)}.open.closed b{color:var(--muted)}.open .dot{width:8px;height:8px;background:var(--ok);transform:rotate(45deg);box-shadow:0 0 0 0 var(--ok);animation:ping 2s infinite}.open.closed .dot{background:var(--muted);animation:none}@keyframes ping{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 50%,transparent)}100%{box-shadow:0 0 0 8px transparent}}.q{border:0;cursor:pointer;font-family:inherit}.help{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border-top:1px solid var(--ink)}.help li{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line)}.help .hi{width:40px;height:40px;display:grid;place-items:center;background:var(--chip);color:var(--steel);clip-path:polygon(50% 0,100% 24.5%,100% 75.5%,50% 100%,0 75.5%,0 24.5%)}.help .hi svg{width:19px;height:19px}.help b{display:block;font-size:14px;font-weight:700;color:var(--ink)}.help p{margin:2px 0 0;font-size:13px;color:var(--muted);line-height:1.5}.acc{border-top:1px solid var(--ink)}.acc details{border-bottom:1px solid var(--line)}.acc summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 2px;font-weight:700;font-size:14.5px}.acc summary::-webkit-details-marker{display:none}.acc summary i{width:12px;height:12px;position:relative;flex:none}.acc summary i::before,.acc summary i::after{content:"";position:absolute;left:0;top:5px;width:12px;height:2px;background:var(--steel);transition:transform .3s}.acc summary i::after{transform:rotate(90deg)}.acc details[open] summary i::after{transform:rotate(0)}.acc details[open] summary{color:var(--steel)}.acc-b{padding:0 2px 16px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}.acc-b p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.55}.acc-cta{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;color:var(--steel);text-decoration:none;border-bottom:1px solid var(--guide);padding-bottom:2px}.acc-cta svg{width:14px;height:14px;transition:transform .25s}.acc-cta:hover svg{transform:translateX(3px)}.morph{display:grid;grid-template-columns:1.1fr 1fr;gap:12px;align-items:center;background:var(--chip);padding:14px;clip-path:polygon(16px 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%,0 16px)}#morph{width:100%;height:auto;overflow:visible;display:block}#morph .pc{stroke-width:.9}#morph .a{fill:var(--logo-a);stroke:var(--logo-a)}#morph .b{fill:var(--logo-b);stroke:var(--logo-b)}#morph .m-serp{fill:none;stroke:var(--logo-b);stroke-width:13;stroke-linejoin:miter}.mean{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;transition:opacity .2s}.mean li{display:flex;flex-direction:column;font-size:12px;color:var(--muted);line-height:1.3;padding-left:10px;border-left:2px solid var(--guide)}.mean b{font-size:13px;color:var(--ink);font-weight:700}.morph-cap{min-height:4.6em;margin:10px 0 0;font-size:13px;color:var(--muted);line-height:1.5}.range{display:flex;align-items:center;gap:10px;margin-top:8px;font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.range input{flex:1;min-width:0;appearance:none;-webkit-appearance:none;height:2px;background:linear-gradient(90deg,var(--steel) var(--p,0%),var(--line) var(--p,0%));outline-offset:6px}.range input::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:20px;background:var(--btn-bg);cursor:grab;clip-path:polygon(50% 0,100% 24.5%,100% 75.5%,50% 100%,0 75.5%,0 24.5%)}.range input::-moz-range-thumb{width:18px;height:20px;border:0;border-radius:0;background:var(--btn-bg);cursor:grab;clip-path:polygon(50% 0,100% 24.5%,100% 75.5%,50% 100%,0 75.5%,0 24.5%)}.lead-form{display:flex;flex-direction:column;gap:14px}.lead-form fieldset{border:0;margin:0;padding:0}.lead-form legend{font-size:13px;font-weight:600;margin-bottom:8px;padding:0}.opts{display:flex;flex-wrap:wrap;gap:6px}.opts label{cursor:pointer}.opts input{position:absolute;opacity:0;pointer-events:none}.opts span{display:block;font-size:12.5px;font-weight:600;padding:8px 12px;border:1px solid var(--line);transition:background .2s,color .2s,border-color .2s}.opts input:checked+span{background:var(--btn-bg);color:var(--btn-fg);border-color:var(--btn-bg)}.opts input:focus-visible+span{outline:2px solid var(--steel);outline-offset:2px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.fl{display:flex;flex-direction:column;gap:5px;min-width:0}.fl span{font-size:11px;font-weight:600;letter-spacing:.04em;color:var(--muted)}.fl em{font-style:normal;font-weight:400}.fl input{font:inherit;font-size:14px;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--guide);padding:7px 0;border-radius:0;min-width:0}.fl input:focus{outline:none;border-bottom-color:var(--steel);box-shadow:0 1px 0 var(--steel)}.fl input::placeholder{color:var(--muted);opacity:.7}.preview{margin:0;font-family:var(--f-mono);font-size:11px;line-height:1.55;color:var(--muted);border-left:2px solid var(--line);padding-left:10px}.fab{position:fixed;z-index:40;right:max(18px,calc(env(safe-area-inset-right,0px) + 14px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:56px;height:62px;display:grid;place-items:center;background:var(--btn-bg);color:var(--btn-fg);clip-path:polygon(50% 0,100% 24.5%,100% 75.5%,50% 100%,0 75.5%,0 24.5%);transform:translateY(120px);transition:transform .45s cubic-bezier(.2,.8,.2,1)}.fab.on{transform:none}.fab svg{width:24px;height:24px}.qr-wrap{position:fixed;inset:0;z-index:70;background:rgba(8,14,26,.6);display:grid;place-items:center;padding:20px;backdrop-filter:blur(4px)}.qr-box{position:relative;background:var(--panel);color:var(--ink);width:min(320px,100%);padding:22px;display:flex;flex-direction:column;align-items:center;gap:12px;clip-path:polygon(16px 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%,0 16px)}.qr-box h3{margin:0;font-size:15px;font-weight:800}.qr-x{position:absolute;right:10px;top:6px;background:none;border:0;font-size:26px;line-height:1;cursor:pointer;color:var(--muted)}.qr-tabs{display:flex;border:1px solid var(--line)}.qr-tabs button{background:none;border:0;padding:7px 12px;font-size:12px;font-weight:600;cursor:pointer;color:var(--muted)}.qr-tabs button[aria-selected="true"]{background:var(--btn-bg);color:var(--btn-fg)}.qr-img{width:220px;height:220px;background:#fff;padding:12px;display:grid;place-items:center}.qr-img svg,.qr-img img{width:100%;height:100%;display:block}.qr-note{margin:0;font-size:12px;color:var(--muted);text-align:center}@media (max-width:380px){.body{padding:18px 16px 16px;gap:20px}.q{font-size:10px}.fields{grid-template-columns:1fr}}@media (prefers-reduced-motion:reduce){.cta::after{animation:none}}</style>
+<!-- shared logo geometry, traced from the original artwork -->
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="mark" viewBox="326 285 427 509">
+<polygon style="fill:var(--mk-b,var(--logo-b))" points="427,317 491,357 491,319 540,289 588,319 588,357 653,317 653,364 540,434 427,364"/>
+<polygon style="fill:var(--mk-a,var(--logo-a))" points="330,354 540,483 749,354 749,645 653,705 653,511 588,551 588,612 491,612 491,551 427,511 427,705 330,645"/>
+<polygon style="fill:var(--mk-b,var(--logo-b))" points="491,661 588,661 588,760 540,790 491,760"/>
+</symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path fill="currentColor" d="M8.9 8.3c.2-.4.5-.5.8-.5h.5c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.1.1-.1.3 0 .5.6 1.1 1.5 2 2.6 2.6.2.1.4.1.5 0l.6-.6c.2-.2.4-.2.6-.1l1.7.7c.2.1.4.3.4.5v.5c0 .3-.2.6-.5.8-.6.4-1.4.6-2.2.3a9 9 0 0 1-5.3-5.2c-.3-.8-.2-1.6.3-2.2z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></g></symbol>
+<symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 22s7-7.1 7-12a7 7 0 1 0-14 0c0 4.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></g></symbol>
+<symbol id="i-web" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.8 5.8 3.8 9s-1.2 6.2-3.8 9c-2.6-2.8-3.8-5.8-3.8-9S9.4 5.8 12 3z"/></g></symbol>
+<symbol id="i-qr" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="3.5" width="6.5" height="6.5"/><rect x="14" y="3.5" width="6.5" height="6.5"/><rect x="3.5" y="14" width="6.5" height="6.5"/></g><g fill="currentColor"><rect x="14" y="14" width="3" height="3"/><rect x="17.5" y="17.5" width="3" height="3"/><rect x="14" y="18.5" width="2" height="2"/><rect x="18.5" y="14" width="2" height="2"/></g></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V4M4 20h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/></g></symbol>
+<symbol id="i-down" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 6l6 6 4-4 8 8"/><path d="M15 16h6v-6"/></g></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/></g><circle cx="12" cy="12" r="1.5" fill="currentColor"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="12"/><path d="M16 8V4H4v12h4"/></g></symbol>
+<symbol id="i-share" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v8h14v-8"/></g></symbol>
+<symbol id="i-save" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><path d="M19 8v6M16 11h6"/></g></symbol>
+<symbol id="i-replay" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4h4"/></g></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+</defs>
+</svg>
+<!-- ======== INTRO: caduceus (built from the logo's own pieces) → divide → join → wordmark ======== -->
+<div id="intro" hidden>
+<div class="stage">
+<div id="logoWrap">
+<svg id="logoAnim" viewBox="300 260 480 560" aria-hidden="true">
+<defs>
+<linearGradient id="shineG" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0" stop-color="#fff" stop-opacity="0"/>
+<stop offset=".5" stop-color="#fff" stop-opacity=".55"/>
+<stop offset="1" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="logoClip">
+<polygon points="427,317 491,357 491,319 540,289 588,319 588,357 653,317 653,364 540,434 427,364"/>
+<polygon points="330,354 540,483 749,354 749,645 653,705 653,511 588,551 588,612 491,612 491,551 427,511 427,705 330,645"/>
+<polygon points="491,661 588,661 588,760 540,790 491,760"/>
+</clipPath>
+</defs>
+<g id="guides">
+<line x1="330" y1="180" x2="330" y2="880"/>
+<line x1="427" y1="180" x2="427" y2="880"/>
+<line x1="540" y1="120" x2="540" y2="900"/>
+<line x1="653" y1="180" x2="653" y2="880"/>
+<line x1="749" y1="180" x2="749" y2="880"/>
+<line x1="130" y1="231" x2="950" y2="735"/>
+<line x1="950" y1="231" x2="130" y2="735"/>
+<line x1="180" y1="213" x2="900" y2="655"/>
+<line x1="900" y1="213" x2="180" y2="655"/>
+</g>
+<rect id="staff" class="a" x="531" y="430" width="18" height="350"/>
+<g id="serpents">
+<polyline id="sA" points="478,770 602,694 478,618 602,542 478,466 520,440"/>
+<polyline id="sB" points="602,770 478,694 602,618 478,542 602,466 560,440"/>
+</g>
+<g id="pieces">
+<polygon class="pc b" data-p="crown" points="427,317 491,357 491,319 540,289 588,319 588,357 653,317 653,364 540,434 427,364"/>
+<polygon class="pc a" data-p="legL" points="330,354 427,413.6 427,705 330,645"/>
+<polygon class="pc a" data-p="coreL" points="427,413.6 540,483 540,612 491,612 491,551 427,511"/>
+<polygon class="pc a" data-p="coreR" points="540,483 653,413.6 653,511 588,551 588,612 540,612"/>
+<polygon class="pc a" data-p="legR" points="653,413.6 749,354 749,645 653,705"/>
+<polygon class="pc b" data-p="base" points="491,661 588,661 588,760 540,790 491,760"/>
+</g>
+<g id="final" opacity="0">
+<polygon class="pc b" points="427,317 491,357 491,319 540,289 588,319 588,357 653,317 653,364 540,434 427,364"/>
+<polygon class="pc a" points="330,354 540,483 749,354 749,645 653,705 653,511 588,551 588,612 491,612 491,551 427,511 427,705 330,645"/>
+<polygon class="pc b" points="491,661 588,661 588,760 540,790 491,760"/>
+</g>
+<g id="cuts">
+<line x1="427" y1="390" x2="427" y2="725"/>
+<line x1="540" y1="455" x2="540" y2="640"/>
+<line x1="653" y1="390" x2="653" y2="725"/>
+<line x1="460" y1="636" x2="620" y2="636"/>
+<line x1="410" y1="398" x2="670" y2="398"/>
+</g>
+<g clip-path="url(#logoClip)"><rect id="shine" x="0" y="250" width="180" height="580" fill="url(#shineG)"/></g>
+</svg>
+</div>
+<div class="wm" aria-label="Mathos Contabilidade">
+<div class="wm-top" id="wmTop"></div>
+<div class="wm-sub" id="wmSub"></div>
+<div class="wm-rule" id="wmRule"></div>
+</div>
+</div>
+<div class="intro-cap" aria-hidden="true"><b id="capN">01</b><span id="capT">Símbolo</span><span class="intro-bar"><i id="capBar"></i></span></div>
+<button id="skip" type="button">Pular</button>
+</div>
+<!-- ======== CARD ======== -->
+<div class="watermark" id="wmk" aria-hidden="true"><svg viewBox="0 0 427 509" width="427" height="509"><use href="#mark" width="100%" height="100%"/></svg></div>
+<main class="wrap">
+<div class="card-shadow">
+<article class="card" id="card">
+<section class="hero" id="hero">
+<div class="hero-art" aria-hidden="true">
+<svg id="heroArt" viewBox="230 230 620 620">
+<line class="ln" x1="130" y1="231" x2="950" y2="735"/>
+<line class="ln" x1="950" y1="231" x2="130" y2="735"/>
+<line class="ln" x1="330" y1="150" x2="330" y2="950"/>
+<line class="ln" x1="749" y1="150" x2="749" y2="950"/>
+<g class="mk">
+<polygon class="crown-fill" points="427,317 491,357 491,319 540,289 588,319 588,357 653,317 653,364 540,434 427,364"/>
+<polygon points="427,317 491,357 491,319 540,289 588,319 588,357 653,317 653,364 540,434 427,364"/>
+<polygon points="330,354 540,483 749,354 749,645 653,705 653,511 588,551 588,612 491,612 491,551 427,511 427,705 330,645"/>
+</g>
+</svg>
+</div>
+<img class="cut" id="cut" src="hugo.webp" alt="Hugo Mathos de terno escuro e camisa azul-clara" width="600" height="800">
+<div class="hero-top rv">
+<div class="brand" style="--mk-a:var(--hero-ink);--mk-b:var(--hero-soft)"><svg viewBox="0 0 427 509" width="24" height="29" aria-hidden="true"><use href="#mark" width="100%" height="100%"/></svg><span>MATHOS<em>CONTABILIDADE</em></span></div>
+<button class="icon-btn" id="shareTop" type="button" aria-label="Compartilhar cartão"><svg><use href="#i-share"/></svg></button>
+</div>
+<div class="hero-name">
+<p class="eyebrow rv" data-bind="cargo">Contador</p>
+<h1 class="rv"><span>Hugo</span><span>Mathos</span></h1>
+</div>
+</section>
+<div class="body">
+<div class="lead rv">
+<p class="tagline">Contabilidade que ajuda sua empresa a crescer.</p>
+<p class="open" id="openNow"><span class="dot"></span><b id="openTxt">Aberto agora</b><span id="openHrs">Seg a sex · 08:00 – 18:00</span></p>
+</div>
+<a class="cta rv" id="ctaWa" href="#" target="_blank" rel="noopener">
+<span class="l"><svg><use href="#i-wa"/></svg>Conversar no WhatsApp</span>
+<svg class="arr" width="18" height="18"><use href="#i-arrow"/></svg>
+</a>
+<nav class="quick rv" aria-label="Atalhos">
+<a class="q" id="qTel" href="#"><svg><use href="#i-phone"/></svg>Ligar</a>
+<a class="q" id="qIg" href="#" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>Instagram</a>
+<a class="q" id="qSite" href="#" target="_blank" rel="noopener"><svg><use href="#i-web"/></svg>Site</a>
+<button class="q" id="qQr" type="button"><svg><use href="#i-qr"/></svg>QR Code</button>
+</nav>
+<section class="rv">
+<div class="sec-h"><h2>Como a Mathos ajuda</h2></div>
+<ul class="help">
+<li><span class="hi"><svg><use href="#i-chart"/></svg></span><div><b>Organizando suas finanças</b><p>Lançamentos e relatórios em dia para você enxergar o caixa da empresa.</p></div></li>
+<li><span class="hi"><svg><use href="#i-down"/></svg></span><div><b>Reduzindo custos e impostos</b><p>Enquadramento certo e planejamento para pagar só o que é devido.</p></div></li>
+<li><span class="hi"><svg><use href="#i-target"/></svg></span><div><b>Apoiando decisões estratégicas</b><p>Números claros para decidir com segurança quando crescer, contratar ou investir.</p></div></li>
+</ul>
+</section>
+<section class="rv">
+<div class="sec-h"><h2>Serviços</h2><small>toque para ver</small></div>
+<div class="acc" id="acc">
+<details name="svc" open><summary><span>Contábil</span><i></i></summary>
+<div class="acc-b"><p>Escrituração, balancetes, balanço patrimonial e DRE, com relatórios que você entende.</p><a class="acc-cta" data-svc="contabilidade" href="#" target="_blank" rel="noopener">Falar sobre contabilidade <svg><use href="#i-arrow"/></svg></a></div></details>
+<details name="svc"><summary><span>Fiscal</span><i></i></summary>
+<div class="acc-b"><p>Apuração de impostos, emissão de guias e entrega das obrigações acessórias dentro do prazo.</p><a class="acc-cta" data-svc="a parte fiscal" href="#" target="_blank" rel="noopener">Falar sobre a parte fiscal <svg><use href="#i-arrow"/></svg></a></div></details>
+<details name="svc"><summary><span>Departamento pessoal</span><i></i></summary>
+<div class="acc-b"><p>Folha de pagamento, admissões, rescisões, férias, 13º salário e eSocial.</p><a class="acc-cta" data-svc="departamento pessoal" href="#" target="_blank" rel="noopener">Falar sobre departamento pessoal <svg><use href="#i-arrow"/></svg></a></div></details>
+<details name="svc"><summary><span>Planejamento tributário</span><i></i></summary>
+<div class="acc-b"><p>Análise do regime ideal (Simples Nacional, Lucro Presumido ou Lucro Real) para reduzir a carga tributária dentro da lei.</p><a class="acc-cta" data-svc="planejamento tributário" href="#" target="_blank" rel="noopener">Falar sobre planejamento tributário <svg><use href="#i-arrow"/></svg></a></div></details>
+</div>
+</section>
+<section class="rv brandsec">
+<div class="sec-h"><h2>Por trás da marca</h2></div>
+<div class="morph">
+<svg id="morph" viewBox="250 150 580 700" aria-label="O caduceu da contabilidade se transformando no M da Mathos">
+<rect class="m-staff a" x="531" y="430" width="18" height="350"/>
+<polyline class="m-serp" points="478,770 602,694 478,618 602,542 478,466 520,440"/>
+<polyline class="m-serp" points="602,770 478,694 602,618 478,542 602,466 560,440"/>
+<polygon class="pc b" data-q="crown" points="427,317 491,357 491,319 540,289 588,319 588,357 653,317 653,364 540,434 427,364"/>
+<polygon class="pc a" data-q="legL" points="330,354 427,413.6 427,705 330,645"/>
+<polygon class="pc a" data-q="coreL" points="427,413.6 540,483 540,612 491,612 491,551 427,511"/>
+<polygon class="pc a" data-q="coreR" points="540,483 653,413.6 653,511 588,551 588,612 540,612"/>
+<polygon class="pc a" data-q="legR" points="653,413.6 749,354 749,645 653,705"/>
+<polygon class="pc b" data-q="base" points="491,661 588,661 588,760 540,790 491,760"/>
+</svg>
+<ul class="mean" id="mean">
+<li><b>Asas</b>diligência</li>
+<li><b>Elmo</b>proteção</li>
+<li><b>Serpentes</b>sabedoria</li>
+<li><b>Bastão</b>poder</li>
+</ul>
+</div>
+<p class="morph-cap" id="morphCap">O M da Mathos nasce do caduceu, o símbolo da contabilidade. Arraste para ver.</p>
+<div class="range">
+<span>Caduceu</span>
+<input type="range" id="morphRange" min="0" max="100" value="0" aria-label="Transformar caduceu em M">
+<span>Mathos</span>
+</div>
+</section>
+<section class="rv">
+<div class="sec-h"><h2>Me conta o seu caso</h2></div>
+<form class="lead-form" id="leadForm">
+<fieldset>
+<legend>O que você precisa?</legend>
+<div class="opts">
+<label><input type="radio" name="obj" value="abrir uma empresa" checked><span>Abrir empresa</span></label>
+<label><input type="radio" name="obj" value="trocar de contador"><span>Trocar de contador</span></label>
+<label><input type="radio" name="obj" value="reduzir impostos"><span>Reduzir impostos</span></label>
+<label><input type="radio" name="obj" value="regularizar pendências"><span>Regularizar pendências</span></label>
+<label><input type="radio" name="obj" value="sair do MEI"><span>Sair do MEI</span></label>
+<label><input type="radio" name="obj" value="tirar uma dúvida"><span>Outro assunto</span></label>
+</div>
+</fieldset>
+<div class="fields">
+<label class="fl"><span>Seu nome</span><input id="fNome" type="text" autocomplete="name" placeholder="Como posso te chamar?"></label>
+<label class="fl"><span>Empresa <em>(opcional)</em></span><input id="fEmp" type="text" autocomplete="organization" placeholder="Nome da empresa"></label>
+</div>
+<a class="cta send" id="leadSend" href="#" target="_blank" rel="noopener">
+<span class="l"><svg><use href="#i-wa"/></svg>Enviar pelo WhatsApp</span>
+<svg class="arr" width="18" height="18"><use href="#i-arrow"/></svg>
+</a>
+<p class="preview" id="leadPrev"></p>
+</form>
+</section>
+<div class="actions rv">
+<button class="ghost" id="saveVcf" type="button"><svg><use href="#i-save"/></svg>Salvar contato</button>
+<button class="ghost" id="shareBtn" type="button"><svg><use href="#i-share"/></svg>Compartilhar</button>
+</div>
+<footer class="foot rv">
+<span>© <span id="yr">2026</span> Mathos Contabilidade</span>
+<button type="button" id="replay"><svg><use href="#i-replay"/></svg>Ver abertura</button>
+</footer>
+</div>
+</article>
+</div>
+</main>
+<a class="fab" id="fab" href="#" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
+<div class="qr-wrap" id="qrWrap" hidden>
+<div class="qr-box" role="dialog" aria-modal="true" aria-labelledby="qrT">
+<button class="qr-x" id="qrClose" type="button" aria-label="Fechar">×</button>
+<h3 id="qrT">Aponte a câmera</h3>
+<div class="qr-tabs" role="tablist">
+<button type="button" role="tab" data-qr="card" aria-selected="true">Este cartão</button>
+<button type="button" role="tab" data-qr="wa" aria-selected="false">WhatsApp</button>
+</div>
+<div class="qr-img" id="qrImg"></div>
+<p class="qr-note" id="qrNote">Abre este cartão digital no celular.</p>
+</div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
+<script>
+/* ===== Edite aqui os dados do Hugo ===== */
+const CONTATO = {
+nome: "Hugo Mathos",
+cargo: "Contador",
+empresa: "Mathos Contabilidade",
+whatsapp: "5562981549797",          // só números, com 55 + DDD
+telefone: "(62) 9 8154-9797",
+instagram: "mathoscontabilidade",   // sem @
+site: "www.mathoscontabilidade.com.br",
+abre: 8, fecha: 18,                 // horário de atendimento (seg a sex)
+mensagemWhats: "Olá, Hugo! Vim pelo seu cartão digital."
+};
+const $ = s => document.querySelector(s);
+const digits = s => s.replace(/\D/g, "");
+const waLink = msg => `https://wa.me/${digits(CONTATO.whatsapp)}?text=${encodeURIComponent(msg)}`;
+/* ---- fill card ---- */
+(function fill(){
+document.querySelectorAll('[data-bind="cargo"]').forEach(e => e.textContent = CONTATO.cargo);
+const wa = waLink(CONTATO.mensagemWhats);
+$("#ctaWa").href = wa;
+$("#qTel").href = "tel:+55" + digits(CONTATO.telefone);
+$("#qIg").href = "https://instagram.com/" + CONTATO.instagram;
+$("#qSite").href = "https://" + CONTATO.site;
+const pad = n => String(n).padStart(2, "0") + ":00";
+const now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Sao_Paulo" }));
+const open = now.getDay() >= 1 && now.getDay() <= 5 && now.getHours() >= CONTATO.abre && now.getHours() < CONTATO.fecha;
+$("#openTxt").textContent = open ? "Aberto agora" : "Fechado agora";
+$("#openNow").classList.toggle("closed", !open);
+$("#openHrs").textContent = `Seg a sex · ${pad(CONTATO.abre)} – ${pad(CONTATO.fecha)}`;
+$("#fab").href = wa;
+document.querySelectorAll("[data-svc]").forEach(el => el.href = waLink(`Olá, Hugo! Vim pelo seu cartão digital e quero falar sobre ${el.dataset.svc}.`));
+$("#yr").textContent = new Date().getFullYear();
+})();
+/* ---- toast / copy / share / vcard ---- */
+let tT;
+function toast(msg){ const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(tT); tT = setTimeout(() => t.classList.remove("on"), 1800); }
+async function copy(text){
+try { await navigator.clipboard.writeText(text); toast("Copiado"); }
+catch { const r = document.createRange(); const s = getSelection(); const n = document.createElement("span"); n.textContent = text; document.body.append(n); r.selectNodeContents(n); s.removeAllRanges(); s.addRange(r); try{document.execCommand("copy"); toast("Copiado");}catch{toast("Selecione e copie o texto");} n.remove(); }
+}
+async function share(){
+const data = { title: CONTATO.nome + " · " + CONTATO.empresa, url: location.href };
+try { if (navigator.share) { await navigator.share(data); return; } } catch (err) { if (err && err.name === "AbortError") return; }
+copy(location.href);
+}
+$("#shareBtn").onclick = share; $("#shareTop").onclick = share;
+$("#saveVcf").onclick = () => {
+const [first, ...rest] = CONTATO.nome.split(" ");
+const vcf = ["BEGIN:VCARD","VERSION:3.0",
+`N:${rest.join(" ")};${first};;;`, `FN:${CONTATO.nome}`, `ORG:${CONTATO.empresa}`, `TITLE:${CONTATO.cargo}`,
+`TEL;TYPE=CELL:+${digits(CONTATO.whatsapp)}`, `URL:https://${CONTATO.site}`,
+`X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/${CONTATO.instagram}`, "END:VCARD"].join("\r\n");
+try {
+const a = document.createElement("a");
+a.href = URL.createObjectURL(new Blob([vcf], { type: "text/vcard" }));
+a.download = "hugo-mathos.vcf"; document.body.append(a); a.click(); a.remove();
+toast("Contato gerado");
+} catch { copy(vcf); }
+};
+/* ---- lead form → WhatsApp message ---- */
+function leadMsg(){
+const obj = document.querySelector('input[name="obj"]:checked').value;
+const nome = $("#fNome").value.trim(), emp = $("#fEmp").value.trim();
+let m = `Olá, Hugo! ${nome ? "Aqui é " + nome + (emp ? ", da " + emp : "") + ". " : ""}Vim pelo seu cartão digital e quero ${obj}.`;
+if (!nome && emp) m = `Olá, Hugo! Falo pela ${emp}. Vim pelo seu cartão digital e quero ${obj}.`;
+return m;
+}
+function updLead(){ const m = leadMsg(); $("#leadSend").href = waLink(m); $("#leadPrev").textContent = "“" + m + "”"; }
+$("#leadForm").addEventListener("input", updLead);
+$("#leadForm").addEventListener("submit", e => e.preventDefault());
+updLead();
+/* ---- floating WhatsApp after the main button scrolls away ---- */
+new IntersectionObserver(([e]) => $("#fab").classList.toggle("on", !e.isIntersecting && e.boundingClientRect.top < 0))
+.observe($("#ctaWa"));
+/* ---- QR code ---- */
+function drawQr(kind){
+const url = kind === "wa" ? waLink(CONTATO.mensagemWhats) : location.href;
+document.querySelectorAll("[data-qr]").forEach(b => b.setAttribute("aria-selected", b.dataset.qr === kind));
+$("#qrNote").textContent = kind === "wa" ? "Abre uma conversa com o Hugo no WhatsApp." : "Abre este cartão digital no celular.";
+if (!window.qrcode) { $("#qrImg").textContent = url; return; }
+const q = qrcode(0, "M"); q.addData(url); q.make();
+$("#qrImg").innerHTML = q.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
+const svg = $("#qrImg svg"); if (svg) { svg.querySelectorAll("path").forEach(p => p.setAttribute("fill", "#13213A")); }
+}
+$("#qQr").onclick = () => { $("#qrWrap").hidden = false; drawQr("card"); $("#qrClose").focus(); };
+$("#qrClose").onclick = () => { $("#qrWrap").hidden = true; };
+$("#qrWrap").addEventListener("click", e => { if (e.target.id === "qrWrap") $("#qrWrap").hidden = true; });
+document.querySelectorAll("[data-qr]").forEach(b => b.onclick = () => drawQr(b.dataset.qr));
+addEventListener("keydown", e => { if (e.key === "Escape") $("#qrWrap").hidden = true; });
+/* ---- hero depth: portrait and line art move at different rates ---- */
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (!reduce) {
+const hero = $("#hero"), cut = $("#cut"), art = $("#heroArt"), wmk = $("#wmk");
+hero.addEventListener("pointermove", e => {
+const r = hero.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+cut.style.transform = `translateX(calc(-50% + ${x * 10}px)) translateY(${y * 4}px)`;
+art.style.transform = `translate(calc(-50% + ${x * -18}px), calc(-50% + ${y * -12}px))`;
+});
+hero.addEventListener("pointerleave", () => { cut.style.transform = ""; art.style.transform = ""; });
+addEventListener("pointermove", e => {
+const x = e.clientX / innerWidth - .5, y = e.clientY / innerHeight - .5;
+wmk.style.transform = `translate(${x * -24}px,${y * -18}px)`;
+});
+}
+/* ===== INTRO ===== */
+const intro = $("#intro");
+let tl = null;
+function buildWordmark(){
+$("#wmTop").innerHTML = [..."MATHOS"].map(c => `<span class="m"><span>${c}</span></span>`).join("");
+$("#wmSub").innerHTML = [..."CONTABILIDADE"].map(c => `<span>${c}</span>`).join("");
+}
+function prepStroke(els){
+els.forEach(el => { const L = el.getTotalLength(); el.style.strokeDasharray = L; el.style.strokeDashoffset = L; });
+}
+function cap(n, t, prog){
+return () => { $("#capN").textContent = n; $("#capT").textContent = t; gsap.to("#capBar", { scaleX: prog, duration: .5, ease: "power2.out" }); };
+}
+/* where each logo piece sits while it is part of the caduceus */
+const CADUCEU = {
+crown: { x: 0,     y: -84,  rotation: 0,   scale: .8 },  // elmo
+legL:  { x: -34,   y: -214, rotation: -50, scale: .74 },  // asa esquerda
+legR:  { x: 34,    y: -214, rotation: 50,  scale: .74 },  // asa direita
+coreL: { x: 0,     y: -70,  rotation: 0,   scale: .9 },   // tocha
+coreR: { x: 0,     y: -70,  rotation: 0,   scale: .9 },
+base:  { x: 0,     y: 58,   rotation: 0,   scale: .7 },   // ponta do bastão
+};
+const SPLIT = {
+crown: { x: 0,    y: -78, rotation: -7, scale: 1 },
+legL:  { x: -104, y: -14, rotation: -9, scale: 1 },
+coreL: { x: -34,  y: 40,  rotation: -5, scale: 1 },
+coreR: { x: 34,   y: 40,  rotation: 5,  scale: 1 },
+legR:  { x: 104,  y: -14, rotation: 9,  scale: 1 },
+base:  { x: 0,    y: 104, rotation: 0,  scale: .92 },
+};
+/* ---- brand story: scrub the caduceus into the M ---- */
+let morphTl = null;
+function buildMorph(){
+if (!window.gsap) return;
+const Q = n => document.querySelector(`[data-q="${n}"]`);
+const serp = [...document.querySelectorAll("#morph .m-serp")];
+serp.forEach(el => { const L = el.getTotalLength(); el.style.strokeDasharray = L; });
+morphTl = gsap.timeline({ paused: true, defaults: { ease: "power2.inOut" } });
+Object.entries(CADUCEU).forEach(([k, v]) =>
+morphTl.fromTo(Q(k), { ...v, transformOrigin: "50% 50%" }, { x: 0, y: 0, rotation: 0, scale: 1, duration: 1 }, 0));
+morphTl
+.fromTo(serp, { strokeDashoffset: 0 }, { strokeDashoffset: (i, el) => -el.getTotalLength(), duration: .45 }, 0)
+.fromTo("#morph .m-staff", { scaleY: 1, transformOrigin: "50% 0%" }, { scaleY: 0, duration: .45 }, 0)
+.fromTo("#mean", { opacity: 1 }, { opacity: .35, duration: .6 }, .2);
+const r = $("#morphRange");
+const set = v => { morphTl.progress(v / 100); r.style.setProperty("--p", v + "%");
+$("#morphCap").textContent = v < 50 ? "O M da Mathos nasce do caduceu, o símbolo da contabilidade. Arraste para ver." : "Cada peça do caduceu virou uma parte do M. Asas, elmo e bastão formam a marca da Mathos."; };
+r.addEventListener("input", () => { gsap.killTweensOf(auto); set(+r.value); });
+const auto = { v: 0 };
+set(0);
+if (!reduce) new IntersectionObserver(([e], o) => {
+if (!e.isIntersecting) return; o.disconnect();
+gsap.to(auto, { v: 100, duration: 2.6, delay: .4, ease: "power2.inOut", onUpdate: () => { r.value = auto.v; set(auto.v); } });
+}, { threshold: .6 }).observe($("#morph"));
+}
+function playIntro(){
+if (!window.gsap) return;
+buildWordmark();
+intro.hidden = false; document.body.classList.add("locked");
+gsap.set(intro, { clipPath: "polygon(0% 0%,100% 0%,100% 100%,0% 100%)" });
+gsap.set(".stage", { y: 0, opacity: 1 });
+gsap.set("#logoAnim", { scale: 1 });
+const guides = [...document.querySelectorAll("#guides line")];
+const cuts = [...document.querySelectorAll("#cuts line")];
+const serp = [...document.querySelectorAll("#serpents polyline")];
+const P = n => document.querySelector(`[data-p="${n}"]`);
+const pieces = document.querySelectorAll("#pieces .pc");
+prepStroke(guides); prepStroke(cuts); prepStroke(serp);
+Object.entries(CADUCEU).forEach(([k, v]) => gsap.set(P(k), { ...v, opacity: 0, transformOrigin: "50% 50%" }));
+gsap.set([P("legL"), P("legR")], { rotation: 0, y: -120 });
+gsap.set("#staff", { scaleY: 0, transformOrigin: "50% 100%", opacity: 1 });
+gsap.set("#serpents", { opacity: 1 });
+gsap.set("#guides", { opacity: .45 });
+gsap.set("#final", { opacity: 0 });
+gsap.set("#cuts", { opacity: 1 });
+gsap.set("#shine", { x: -200 });
+gsap.set("#logoWrap", { y: 70 });
+gsap.set("#wmTop .m span", { yPercent: 115 });
+gsap.set("#wmSub span", { opacity: 0, y: 6, filter: "blur(6px)" });
+gsap.set("#wmRule", { scaleX: 0 });
+gsap.set("#capBar", { scaleX: 0 });
+gsap.set(".rv", { opacity: 0, y: 26 });
+gsap.set("#cut", { opacity: 0, y: 40 });
+gsap.set("#heroArt .mk polygon, #heroArt .ln", { opacity: 0 });
+tl = gsap.timeline({ onComplete: finish });
+tl
+// 01 símbolo: a geometric caduceus assembles from the logo's own pieces
+.add(cap("01", "Símbolo", .25))
+.to(guides, { strokeDashoffset: 0, duration: 1, ease: "power2.inOut", stagger: .05 }, 0)
+.to("#staff", { scaleY: 1, duration: .8, ease: "expo.out" }, .2)
+.to(P("base"), { opacity: 1, duration: .3 }, .25)
+.fromTo(P("base"), { y: CADUCEU.base.y + 40 }, { y: CADUCEU.base.y, duration: .7, ease: "expo.out" }, .25)
+.to(serp, { strokeDashoffset: 0, duration: 1.1, ease: "power2.inOut", stagger: .1 }, .5)
+.fromTo([P("coreL"), P("coreR")], { opacity: 0, scale: .4 }, { opacity: 1, scale: .9, duration: .6, ease: "back.out(2)" }, .95)
+.fromTo(P("crown"), { opacity: 0, y: CADUCEU.crown.y - 50 }, { opacity: 1, y: CADUCEU.crown.y, duration: .6, ease: "expo.out" }, 1.15)
+.to(P("legL"), { opacity: 1, rotation: CADUCEU.legL.rotation, y: CADUCEU.legL.y, duration: .8, ease: "back.out(1.7)" }, 1.3)
+.to(P("legR"), { opacity: 1, rotation: CADUCEU.legR.rotation, y: CADUCEU.legR.y, duration: .8, ease: "back.out(1.7)" }, 1.3)
+// wing beat
+.to(P("legL"), { rotation: -38, duration: .22, ease: "sine.inOut", yoyo: true, repeat: 3 }, 2.15)
+.to(P("legR"), { rotation: 38, duration: .22, ease: "sine.inOut", yoyo: true, repeat: 3 }, 2.15)
+// 02 divisão: serpents and staff withdraw, cut lines slice, pieces scatter
+.add(cap("02", "Divisão", .5), 3.15)
+.to(serp, { strokeDashoffset: (i, el) => -el.getTotalLength(), duration: .55, ease: "power2.in" }, 3.15)
+.to("#staff", { scaleY: 0, transformOrigin: "50% 0%", duration: .5, ease: "power3.in" }, 3.25)
+.to(cuts, { strokeDashoffset: 0, duration: .3, ease: "power3.in", stagger: .06 }, 3.35);
+Object.entries(SPLIT).forEach(([k, v]) => tl.to(P(k), { ...v, duration: .8, ease: "expo.out" }, 3.7));
+tl
+.to("#cuts", { opacity: 0, duration: .3 }, 3.8)
+.to("#guides", { opacity: 1, duration: .5 }, 3.7)
+.to(pieces, { y: "+=6", duration: .45, ease: "sine.inOut", yoyo: true, repeat: 1 }, 4.35)
+// 03 junção: everything snaps into the Mathos mark
+.add(cap("03", "Junção", .75), 5.2)
+.to([P("legL"), P("legR")], { x: 0, y: 0, rotation: 0, scale: 1, duration: .7, ease: "back.out(1.6)" }, 5.25)
+.to([P("coreL"), P("coreR")], { x: 0, y: 0, rotation: 0, scale: 1, duration: .7, ease: "back.out(1.6)" }, 5.35)
+.to([P("crown"), P("base")], { x: 0, y: 0, rotation: 0, scale: 1, duration: .7, ease: "back.out(1.8)" }, 5.45)
+.to("#logoAnim", { scale: 1.06, duration: .12, ease: "power2.out", transformOrigin: "50% 50%" }, 6.02)
+.set("#final", { opacity: 1 }, 6.02)
+.set(pieces, { opacity: 0 }, 6.03)
+.to("#logoAnim", { scale: 1, duration: .5, ease: "elastic.out(1,.45)" }, 6.14)
+.to("#shine", { x: 820, duration: .9, ease: "power2.inOut" }, 6.05)
+.to("#guides", { opacity: 0, duration: .7 }, 6.1)
+// 04 marca: lift the mark, reveal the vertical wordmark
+.add(cap("04", "Marca", 1), 6.5)
+.to("#logoWrap", { y: 0, duration: .9, ease: "expo.inOut" }, 6.4)
+.to("#wmTop .m span", { yPercent: 0, duration: .75, ease: "expo.out", stagger: .06 }, 6.85)
+.to("#wmRule", { scaleX: 1, duration: .7, ease: "expo.out" }, 7.15)
+.to("#wmSub span", { opacity: 1, y: 0, filter: "blur(0px)", duration: .5, ease: "power2.out", stagger: { each: .035, from: "center" } }, 7.25)
+// exit: angled wipe at the logo's slope, card assembles
+.to(intro, { clipPath: "polygon(0% 0%,100% 0%,100% -30%,0% 0%)", duration: .9, ease: "expo.inOut" }, 8.8)
+.to(".stage", { y: -60, opacity: 0, duration: .7, ease: "power2.in" }, 8.75)
+.to("#heroArt .ln", { opacity: 1, duration: 1.2, ease: "power1.out", stagger: .1 }, 9.2)
+.to("#heroArt .mk polygon", { opacity: 1, duration: 1.2, ease: "power1.out", stagger: .15 }, 9.3)
+.to("#cut", { opacity: 1, y: 0, duration: 1.1, ease: "expo.out" }, 9.3)
+.to(".rv", { opacity: 1, y: 0, duration: .8, ease: "expo.out", stagger: .06 }, 9.4);
+}
+function finish(){
+intro.hidden = true; document.body.classList.remove("locked");
+if (window.gsap) gsap.set(".rv, #cut, #heroArt .mk polygon, #heroArt .ln", { clearProps: "opacity,transform" });
+}
+$("#skip").onclick = () => { if (tl) tl.progress(1); };
+$("#replay").onclick = () => { if (tl) tl.kill(); scrollTo(0, 0); playIntro(); };
+buildMorph();
+if (!reduce) playIntro();
+</script>
+</body>
+</html>
