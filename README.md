@@ -10,3 +10,7 @@ Site estático, sem build. Os arquivos:
 - `favicon.svg`: ícone da aba
 
 Contatos, horário e mensagem do WhatsApp ficam no objeto `CONTATO`, no começo do `<script>` em `index.html`.
+
+## Link da bio do Instagram
+
+`links/index.html` é a página do link da bio do @mathoscontabilidade, servida em `/links`. O `vercel.json` faz o domínio `links.mathoscontabilidade.com.br` abrir essa página direto. Os dados ficam no objeto `CONTATO` dela.
