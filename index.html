@@ -84,7 +84,7 @@
 <img class="cut" id="cut" src="hugo.webp" alt="Hugo Mathos de terno escuro e camisa azul-clara" width="600" height="800">
 <div class="hero-top rv">
 <div class="brand" style="--mk-a:var(--hero-ink);--mk-b:var(--hero-soft)"><svg viewBox="0 0 427 509" width="24" height="29" aria-hidden="true"><use href="#mark" width="100%" height="100%"/></svg><span>MATHOS<em>CONTABILIDADE</em></span></div>
-<button class="icon-btn" id="shareTop" type="button" aria-label="Compartilhar cartão"><svg><use href="#i-share"/></svg></button>
+<button class="icon-btn" id="shareTop" data-ev="compartilhar" type="button" aria-label="Compartilhar cartão"><svg><use href="#i-share"/></svg></button>
 </div>
 <div class="hero-name">
 <p class="eyebrow rv">Contador · MEI e Simples</p>
@@ -96,15 +96,15 @@
 <p class="tagline">Contabilidade para MEI e empresas do Simples Nacional, com atendimento direto pelo WhatsApp.</p>
 <p class="open" id="openNow"><span class="dot"></span><b id="openTxt">Aberto agora</b><span id="openHrs">Seg a sex · 08:00 – 18:00</span></p>
 </div>
-<a class="cta rv" id="ctaWa" href="#" target="_blank" rel="noopener">
+<a class="cta rv" id="ctaWa" data-ev="whatsapp" href="#" target="_blank" rel="noopener">
 <span class="l"><svg><use href="#i-wa"/></svg>Conversar no WhatsApp</span>
 <svg class="arr" width="18" height="18"><use href="#i-arrow"/></svg>
 </a>
 <nav class="quick rv" aria-label="Atalhos">
-<a class="q" id="qTel" href="#"><svg><use href="#i-phone"/></svg>Ligar</a>
-<a class="q" id="qIg" href="#" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>Instagram</a>
-<a class="q" id="qSite" href="#" target="_blank" rel="noopener"><svg><use href="#i-web"/></svg>Site</a>
-<button class="q" id="qQr" type="button"><svg><use href="#i-qr"/></svg>QR Code</button>
+<a class="q" id="qTel" data-ev="ligar" href="#"><svg><use href="#i-phone"/></svg>Ligar</a>
+<a class="q" id="qIg" data-ev="instagram" href="#" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>Instagram</a>
+<a class="q" id="qSite" data-ev="site" href="#" target="_blank" rel="noopener"><svg><use href="#i-web"/></svg>Site</a>
+<button class="q" id="qQr" data-ev="qr" type="button"><svg><use href="#i-qr"/></svg>QR Code</button>
 </nav>
 <section class="rv about">
 <div class="sec-h"><h2>Sobre o Hugo</h2></div>
@@ -132,7 +132,7 @@
 <li>Acompanhamento do limite de faturamento</li>
 <li>Passagem para Microempresa quando o MEI crescer</li>
 </ul>
-<a class="acc-cta" data-svc="o meu MEI" href="#" target="_blank" rel="noopener">Falar sobre meu MEI <svg><use href="#i-arrow"/></svg></a>
+<a class="acc-cta" data-svc="o meu MEI" data-ev="svc_mei" href="#" target="_blank" rel="noopener">Falar sobre meu MEI <svg><use href="#i-arrow"/></svg></a>
 </div>
 <div class="tabp" id="pane-sn" role="tabpanel" aria-labelledby="tab-sn" hidden>
 <p>Para microempresas e empresas de pequeno porte que querem pagar o imposto certo, sem surpresa no fim do mês.</p>
@@ -144,7 +144,7 @@
 <li>Declaração anual (DEFIS) e demais obrigações</li>
 <li>Planejamento para não ser excluído do Simples</li>
 </ul>
-<a class="acc-cta" data-svc="o Simples Nacional" href="#" target="_blank" rel="noopener">Falar sobre o Simples Nacional <svg><use href="#i-arrow"/></svg></a>
+<a class="acc-cta" data-svc="o Simples Nacional" data-ev="svc_simples" href="#" target="_blank" rel="noopener">Falar sobre o Simples Nacional <svg><use href="#i-arrow"/></svg></a>
 </div>
 </section>
 <section class="rv">
@@ -215,7 +215,7 @@
 <label class="fl"><span>Seu nome</span><input id="fNome" type="text" autocomplete="name" placeholder="Como posso te chamar?"></label>
 <label class="fl"><span>Empresa <em>(opcional)</em></span><input id="fEmp" type="text" autocomplete="organization" placeholder="Nome da empresa"></label>
 </div>
-<a class="cta send" id="leadSend" href="#" target="_blank" rel="noopener">
+<a class="cta send" id="leadSend" data-ev="form_enviar" href="#" target="_blank" rel="noopener">
 <span class="l"><svg><use href="#i-wa"/></svg>Enviar pelo WhatsApp</span>
 <svg class="arr" width="18" height="18"><use href="#i-arrow"/></svg>
 </a>
@@ -223,18 +223,18 @@
 </form>
 </section>
 <div class="actions rv">
-<button class="ghost" id="saveVcf" type="button"><svg><use href="#i-save"/></svg>Salvar contato</button>
-<button class="ghost" id="shareBtn" type="button"><svg><use href="#i-share"/></svg>Compartilhar</button>
+<button class="ghost" id="saveVcf" data-ev="salvar_contato" type="button"><svg><use href="#i-save"/></svg>Salvar contato</button>
+<button class="ghost" id="shareBtn" data-ev="compartilhar" type="button"><svg><use href="#i-share"/></svg>Compartilhar</button>
 </div>
 <footer class="foot rv">
-<span>© <span id="yr">2026</span> <a id="igEmp" href="https://instagram.com/mathoscontabilidade" target="_blank" rel="noopener">Mathos Contabilidade</a></span>
+<span>© <span id="yr">2026</span> <a id="igEmp" data-ev="ig_mathos" href="https://instagram.com/mathoscontabilidade" target="_blank" rel="noopener">Mathos Contabilidade</a></span>
 <button type="button" id="replay"><svg><use href="#i-replay"/></svg>Ver abertura</button>
 </footer>
 </div>
 </article>
 </div>
 </main>
-<a class="fab" id="fab" href="#" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
+<a class="fab" id="fab" data-ev="fab" href="#" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
 <div class="qr-wrap" id="qrWrap" hidden>
 <div class="qr-box" role="dialog" aria-modal="true" aria-labelledby="qrT">
 <button class="qr-x" id="qrClose" type="button" aria-label="Fechar">×</button>
@@ -287,6 +287,19 @@ $("#fab").href = wa;
 document.querySelectorAll("[data-svc]").forEach(el => el.href = waLink(`Olá, Hugo! Vim pelo seu cartão digital e quero falar sobre ${el.dataset.svc}.`));
 $("#yr").textContent = new Date().getFullYear();
 })();
+/* ---- anonymous visit and click counting, read in the Mathos admin panel (no personal data) ---- */
+const TRACK_URL = "https://bio.mathoscontabilidade.com.br/api/track";
+function track(e){
+try {
+let v = "";
+try { v = localStorage.getItem("mt_id") || ""; if (!v) { v = Math.random().toString(36).slice(2, 12) + Date.now().toString(36); localStorage.setItem("mt_id", v); } } catch {}
+const body = JSON.stringify({ s: "card", e, r: document.referrer.slice(0, 200), v });
+if (navigator.sendBeacon) navigator.sendBeacon(TRACK_URL, new Blob([body], { type: "text/plain" }));
+else fetch(TRACK_URL, { method: "POST", body, keepalive: true, mode: "no-cors" });
+} catch {}
+}
+track("view");
+document.addEventListener("click", e => { const a = e.target.closest("[data-ev]"); if (a) track("click:" + a.dataset.ev); });
 /* ---- toast / copy / share / vcard ---- */
 let tT;
 function toast(msg){ const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(tT); tT = setTimeout(() => t.classList.remove("on"), 1800); }
