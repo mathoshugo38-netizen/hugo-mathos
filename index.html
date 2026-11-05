@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Hugo Mathos · Mathos Contabilidade</title>
-<meta name="description" content="Hugo Mathos, contador da Mathos Contabilidade. Contabilidade para MEI e empresas do Simples Nacional. Fale pelo WhatsApp (62) 9 8154-9797.">
+<meta name="description" content="Hugo Mathos, contador da Mathos Contabilidade em Goiânia. Contabilidade para MEI e empresas do Simples Nacional. Fale pelo WhatsApp (62) 9 8154-9797.">
 <meta name="theme-color" content="#1B2D49">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/og.jpg">
@@ -108,12 +108,12 @@
 </nav>
 <section class="rv about">
 <div class="sec-h"><h2>Sobre o Hugo</h2></div>
-<p>Hugo Mathos é contador e cuida da contabilidade de quem está começando ou crescendo: microempreendedores individuais e pequenas empresas do Simples Nacional.</p>
+<p>Hugo Mathos é contador em Goiânia e cuida da contabilidade de quem está começando ou crescendo: microempreendedores individuais e pequenas empresas do Simples Nacional.</p>
 <p>Você fala direto com quem cuida dos seus números, entende o que precisa pagar e quando, e fica sabendo de qualquer pendência antes que ela vire multa.</p>
 <dl class="facts">
 <div><dt>Foco</dt><dd>MEI e Simples Nacional</dd></div>
 <div><dt>Atendimento</dt><dd>Seg a sex, 08h às 18h</dd></div>
-<div><dt>Contato</dt><dd>Direto pelo WhatsApp</dd></div>
+<div><dt>Cidade</dt><dd>Goiânia, GO</dd></div>
 </dl>
 </section>
 <section class="rv">
@@ -227,7 +227,7 @@
 <button class="ghost" id="shareBtn" type="button"><svg><use href="#i-share"/></svg>Compartilhar</button>
 </div>
 <footer class="foot rv">
-<span>© <span id="yr">2026</span> Mathos Contabilidade</span>
+<span>© <span id="yr">2026</span> <a id="igEmp" href="https://instagram.com/mathoscontabilidade" target="_blank" rel="noopener">Mathos Contabilidade</a></span>
 <button type="button" id="replay"><svg><use href="#i-replay"/></svg>Ver abertura</button>
 </footer>
 </div>
@@ -259,7 +259,8 @@ cargo: "Contador",
 empresa: "Mathos Contabilidade",
 whatsapp: "5562981549797",          // só números, com 55 + DDD
 telefone: "(62) 9 8154-9797",
-instagram: "mathoscontabilidade",   // sem @
+instagram: "hugo.mathos",           // Instagram do Hugo, sem @
+  instagramEmpresa: "mathoscontabilidade",
 site: "www.mathoscontabilidade.com.br",
 abre: 8, fecha: 18,                 // horário de atendimento (seg a sex)
 mensagemWhats: "Olá, Hugo! Vim pelo seu cartão digital."
@@ -274,6 +275,7 @@ const wa = waLink(CONTATO.mensagemWhats);
 $("#ctaWa").href = wa;
 $("#qTel").href = "tel:+55" + digits(CONTATO.telefone);
 $("#qIg").href = "https://instagram.com/" + CONTATO.instagram;
+$("#igEmp").href = "https://instagram.com/" + CONTATO.instagramEmpresa;
 $("#qSite").href = "https://" + CONTATO.site;
 const pad = n => String(n).padStart(2, "0") + ":00";
 const now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Sao_Paulo" }));
@@ -303,7 +305,7 @@ const [first, ...rest] = CONTATO.nome.split(" ");
 const vcf = ["BEGIN:VCARD","VERSION:3.0",
 `N:${rest.join(" ")};${first};;;`, `FN:${CONTATO.nome}`, `ORG:${CONTATO.empresa}`, `TITLE:${CONTATO.cargo}`,
 `TEL;TYPE=CELL:+${digits(CONTATO.whatsapp)}`, `URL:https://${CONTATO.site}`,
-`X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/${CONTATO.instagram}`, "END:VCARD"].join("\r\n");
+`X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/${CONTATO.instagram}`, `X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/${CONTATO.instagramEmpresa}`, "END:VCARD"].join("\r\n");
 try {
 const a = document.createElement("a");
 a.href = URL.createObjectURL(new Blob([vcf], { type: "text/vcard" }));
