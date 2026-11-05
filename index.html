@@ -87,13 +87,13 @@
 <button class="icon-btn" id="shareTop" data-ev="compartilhar" type="button" aria-label="Compartilhar cartão"><svg><use href="#i-share"/></svg></button>
 </div>
 <div class="hero-name">
-<p class="eyebrow rv">Contador · MEI e Simples</p>
+<p class="eyebrow rv" id="cardTopo">Contador · MEI e Simples</p>
 <h1 class="rv"><span>Hugo</span><span>Mathos</span></h1>
 </div>
 </section>
 <div class="body">
 <div class="lead rv">
-<p class="tagline">Contabilidade para MEI e empresas do Simples Nacional, com atendimento direto pelo WhatsApp.</p>
+<p class="tagline" id="cardFrase">Contabilidade para MEI e empresas do Simples Nacional, com atendimento direto pelo WhatsApp.</p>
 <p class="open" id="openNow"><span class="dot"></span><b id="openTxt">Aberto agora</b><span id="openHrs">Seg a sex · 08:00 – 18:00</span></p>
 </div>
 <a class="cta rv" id="ctaWa" data-ev="whatsapp" href="#" target="_blank" rel="noopener">
@@ -108,11 +108,11 @@
 </nav>
 <section class="rv about">
 <div class="sec-h"><h2>Sobre o Hugo</h2></div>
-<p>Hugo Mathos é contador em Goiânia e cuida da contabilidade de quem está começando ou crescendo: microempreendedores individuais e pequenas empresas do Simples Nacional.</p>
-<p>Você fala direto com quem cuida dos seus números, entende o que precisa pagar e quando, e fica sabendo de qualquer pendência antes que ela vire multa.</p>
+<p id="sobre1">Hugo Mathos é contador em Goiânia e cuida da contabilidade de quem está começando ou crescendo: microempreendedores individuais e pequenas empresas do Simples Nacional.</p>
+<p id="sobre2">Você fala direto com quem cuida dos seus números, entende o que precisa pagar e quando, e fica sabendo de qualquer pendência antes que ela vire multa.</p>
 <dl class="facts">
 <div><dt>Foco</dt><dd>MEI e Simples Nacional</dd></div>
-<div><dt>Atendimento</dt><dd>Seg a sex, 08h às 18h</dd></div>
+<div><dt>Atendimento</dt><dd id="hrsDd">Seg a sex, 08h às 18h</dd></div>
 <div><dt>Cidade</dt><dd>Goiânia, GO</dd></div>
 </dl>
 </section>
@@ -262,31 +262,53 @@ telefone: "(62) 9 8154-9797",
 instagram: "hugo.mathos",           // Instagram do Hugo, sem @
   instagramEmpresa: "mathoscontabilidade",
 site: "www.mathoscontabilidade.com.br",
-abre: 8, fecha: 18,                 // horário de atendimento (seg a sex)
+diaFim: 5,                          // 5 = seg a sex, 6 = seg a sáb
+abre: 8, fecha: 18,                 // horário de atendimento
 mensagemWhats: "Olá, Hugo! Vim pelo seu cartão digital."
 };
+/* these are the fallbacks: what is saved in the Mathos admin panel (bio.mathoscontabilidade.com.br/admin → Editar) replaces them on load */
+const BIO_URL = "https://bio.mathoscontabilidade.com.br";
 const $ = s => document.querySelector(s);
 const digits = s => s.replace(/\D/g, "");
 const waLink = msg => `https://wa.me/${digits(CONTATO.whatsapp)}?text=${encodeURIComponent(msg)}`;
 /* ---- fill card ---- */
-(function fill(){
+function fill(){
 document.querySelectorAll('[data-bind="cargo"]').forEach(e => e.textContent = CONTATO.cargo);
 const wa = waLink(CONTATO.mensagemWhats);
 $("#ctaWa").href = wa;
-$("#qTel").href = "tel:+55" + digits(CONTATO.telefone);
+$("#qTel").href = "tel:+55" + digits(CONTATO.telefone).replace(/^55(?=\d{10,11}$)/, "");
 $("#qIg").href = "https://instagram.com/" + CONTATO.instagram;
 $("#igEmp").href = "https://instagram.com/" + CONTATO.instagramEmpresa;
 $("#qSite").href = "https://" + CONTATO.site;
 const pad = n => String(n).padStart(2, "0") + ":00";
 const now = new Date(new Date().toLocaleString("en-US", { timeZone: "America/Sao_Paulo" }));
-const open = now.getDay() >= 1 && now.getDay() <= 5 && now.getHours() >= CONTATO.abre && now.getHours() < CONTATO.fecha;
+const open = now.getDay() >= 1 && now.getDay() <= CONTATO.diaFim && now.getHours() >= CONTATO.abre && now.getHours() < CONTATO.fecha;
 $("#openTxt").textContent = open ? "Aberto agora" : "Fechado agora";
 $("#openNow").classList.toggle("closed", !open);
-$("#openHrs").textContent = `Seg a sex · ${pad(CONTATO.abre)} – ${pad(CONTATO.fecha)}`;
+const ate = CONTATO.diaFim === 6 ? "sáb" : "sex";
+$("#openHrs").textContent = `Seg a ${ate} · ${pad(CONTATO.abre)} – ${pad(CONTATO.fecha)}`;
+$("#hrsDd").textContent = `Seg a ${ate}, ${String(CONTATO.abre).padStart(2, "0")}h às ${String(CONTATO.fecha).padStart(2, "0")}h`;
 $("#fab").href = wa;
 document.querySelectorAll("[data-svc]").forEach(el => el.href = waLink(`Olá, Hugo! Vim pelo seu cartão digital e quero falar sobre ${el.dataset.svc}.`));
 $("#yr").textContent = new Date().getFullYear();
-})();
+}
+fill();
+
+/* content edited in the admin panel: contacts, hours, texts and Hugo's photo */
+fetch(BIO_URL + "/api/content", { cache: "no-store" }).then(r => r.ok ? r.json() : null).then(j => {
+if (!j || !j.cfg) return;
+const c = j.cfg, k = c.cartao;
+Object.assign(CONTATO, { whatsapp: c.contato.whatsapp, telefone: c.contato.telefone, site: c.contato.site,
+instagram: c.contato.instagramHugo, instagramEmpresa: c.contato.instagramMathos,
+diaFim: c.contato.diaFim, abre: c.contato.abre, fecha: c.contato.fecha, mensagemWhats: k.mensagem });
+$("#cardTopo").textContent = k.topo;
+$("#cardFrase").textContent = k.frase;
+$("#sobre1").textContent = k.sobre1;
+$("#sobre2").textContent = k.sobre2;
+if (c.foto.v) $("#cut").src = BIO_URL + "/api/photo?v=" + c.foto.v;
+fill();
+if (typeof updLead === "function") updLead();
+}).catch(() => {});
 /* ---- anonymous visit and click counting, read in the Mathos admin panel (no personal data) ---- */
 const TRACK_URL = "https://bio.mathoscontabilidade.com.br/api/track";
 function track(e){
